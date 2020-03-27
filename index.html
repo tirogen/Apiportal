@@ -110,7 +110,7 @@
 				xhr.setRequestHeader('x-ibm-client-id', '8296ec7b-9efd-431e-961d-4911af679e57');
 			},
 			success: function(response) {
-				let res = response.result.data.data_detail;
+				let res = response.result.data.data_detail.reverse();
 				let periods = [];
 				let rates = [];
 				res.forEach((item, i) => {
